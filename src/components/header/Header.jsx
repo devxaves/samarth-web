@@ -1,0 +1,134 @@
+import React, { useState, useEffect } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import menus from "../../pages/menu";
+import logo from "../../assets/images/new/newlogo.png";
+import "./styles.scss";
+
+const Header = () => {
+  const [scroll, setScroll] = useState(false);
+  const [menuActive, setMenuActive] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(null);
+  const [exploreSubMenuActive, setExploreSubMenuActive] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 300);
+    });
+    return () => {
+      setScroll({});
+    };
+  }, []);
+
+  const handleMenuActive = () => {
+    setMenuActive(!menuActive);
+  };
+
+  const handleDropdown = (index) => {
+    if (activeIndex === index) {
+      setActiveIndex(null);
+    } else {
+      setActiveIndex(index);
+    }
+  };
+
+  const toggleExploreSubMenu = () => {
+    setExploreSubMenuActive(!exploreSubMenuActive);
+  };
+
+  const location = useLocation();
+
+  const handleCloseMenu = () => {
+    setMenuActive(false);
+    setActiveIndex(null);
+  };
+
+  return (
+    <header id="header_main" className={`header ${scroll ? "is-fixed" : ""}`}>
+      <div className="container big">
+        <div className="row">
+          <div className="col-12">
+            <div className="header__body">
+              <div className="header__logo">
+                <Link to="/">
+                  <img
+                    id="site-logo"
+                    className="custom-logo"
+                    src={logo}
+                    alt="logo"
+                  />
+                </Link>
+                <p className="logo-text">SAMARTH</p>
+              </div>
+
+              <div className="header__right">
+                <nav
+                  id="main-nav"
+                  className={`main-nav ${menuActive ? "active" : ""}`}
+                >
+                  <ul id="menu-primary-menu" className="menu">
+                    {menus.map((data, idx) => (
+                      <li
+                        key={idx}
+                        onClick={() => handleDropdown(idx)}
+                        className={`menu-item ${
+                          data.namesub ? "menu-item-has-children" : ""
+                        } ${activeIndex === idx ? "active" : ""}`}
+                      >
+                        <div className="explore">
+                          {data.name === "Explore" ? (
+                            <a onClick={toggleExploreSubMenu}>{data.name}</a>
+                          ) : (
+                            <Link to={data.links} onClick={handleCloseMenu}>
+                              {data.name}
+                            </Link>
+                          )}
+                        </div>
+                        {data.namesub && (
+                          <ul
+                            className={`sub-menu ${
+                              activeIndex === idx && exploreSubMenuActive
+                                ? "active"
+                                : ""
+                            }`}
+                          >
+                            {data.namesub.map((submenu) => (
+                              <li key={submenu.id} className="menu-item">
+                                <NavLink
+                                  to={submenu.links}
+                                  onClick={handleCloseMenu}
+                                >
+                                  {submenu.sub}
+                                </NavLink>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+                <div
+                  className={`mobile-button ${menuActive ? "active" : ""}`}
+                  onClick={handleMenuActive}
+                >
+                  <span></span>
+                </div>
+              </div>
+
+              <div className="header__action">
+                <Link to="#" className="search-btn">
+                  {/* Search icon SVG */}
+                </Link>
+                <Link to="/contact" className="action-btn">
+                  <span>Join Now</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
