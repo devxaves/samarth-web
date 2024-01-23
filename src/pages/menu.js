@@ -36,7 +36,7 @@ const menus = [
             },
             {
                 id: 4,
-                sub: 'For Aspirants',
+                sub: 'For Aspirants       - NEW',
                 links: '/Aspirants'
             },
         ]
