@@ -71,7 +71,9 @@
     margin-left: 20px;
     margin-right: 20px ;
     margin-top: 50px;
-
+    transition: 0.3s;
+    cursor: pointer;
+    
 }
 
 .video-box img{
@@ -84,9 +86,6 @@
     // box-shadow: 0px 4px 4px 0px rgba(164, 123, 255, 0.23); 
     z-index: -1;
 }
-
-
-
 
 .video-title{
     margin-top: 10px;
@@ -103,4 +102,9 @@
     line-height: normal;
     padding: 5px 18px;
    
+}
+
+.video-container:hover{
+    scale: 107%;
+    background-color:#ffffff4e;
 }
