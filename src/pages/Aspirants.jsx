@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import "../scss/component/aspirants.scss"
 import img from "../assets/images/background/reddot.png"
+import thumbnail1 from "../assets/images/thumbnail/video1.jpg"
 
 import PageTitle from '../components/pagetitle/PageTitle';
 
@@ -35,14 +36,17 @@ function Aspirants(props) {
                     <div className=" videos ">
                         <div className="video-container">
                             <div className="video-box">
+                            <img className='video-box' src={thumbnail1} alt="1" />
 
                             </div>
-                            <div className="video-title">
-                                <p>Video Title</p>
+                            <div className="video-title"><a href='https://youtu.be/f3BPJxJ3JwE?si=SRhuBDIx52nhvEM1'>
+                                <p>How to fill OMR Sheet in Mock Test & Prelims Exams | Drishti IAS</p>
+                                </a>
                             </div>
                         </div>
                         <div className="video-container">
                             <div className="video-box">
+                            <img className='video-box' src={thumbnail1} alt="1" />
 
                             </div>
                             <div className="video-title">
@@ -104,5 +108,6 @@ function Aspirants(props) {
         </div>
     );
 }
+
 
 export default Aspirants;
