@@ -13,16 +13,16 @@ function Aspirants(props) {
                 
                 <div className='exams-list' >
                 <div className="Upcoming_exams">
-                4 Feb - GATE - Gratitide Aptitude Test In Engineering
+                3 Feb 2024 - GATE - Gratitide Aptitude Test In Engineering
                 </div>
                 <div className="Upcoming_exams">
-                4 Feb - GATE - Gratitide Aptitude Test In Engineering
+                26 May 2024 - UPSC (prelims) - Union Public Service Commission
                 </div>
                 <div className="Upcoming_exams">
-                4 Feb - GATE - Gratitide Aptitude Test In Engineering
+                20 Sept 2024 - UPSC (mains) - Union Public Service Commission
                 </div>
                 <div className="Upcoming_exams">
-                4 Feb - GATE - Gratitide Aptitude Test In Engineering
+                June 2024 - WBCS - West Bengal Public Service Commission
                 </div>
                 </div>
                
