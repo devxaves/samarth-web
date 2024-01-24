@@ -35,9 +35,8 @@ function Aspirants(props) {
                 <div className='topic'>
                     <div className=" videos ">
                         <div className="video-container">
-                            <div className="video-box">
-                                <img className='video-box' src={thumbnail1} alt="1" />
-
+                            <div className="video-box"><a target='_blank' href="https://youtu.be/f3BPJxJ3JwE?si=SRhuBDIx52nhvEM1">
+                                <img className='video-box' src={thumbnail1} alt="1" /></a>
                             </div>
                             <div className="video-title"><a target='_blank' href='https://youtu.be/f3BPJxJ3JwE?si=SRhuBDIx52nhvEM1'>
                                 <p>How to fill OMR Sheet in Mock Test & Prelims Exams | Drishti IAS</p>
