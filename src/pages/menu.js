@@ -23,6 +23,7 @@ const menus = [
                 id: 2,
                 sub: 'Activity',
                 links: '/Activity'
+                
             },
             {
                 id: 3,
@@ -35,9 +36,10 @@ const menus = [
                 links: '/Resources'
             },
             {
-                id: 4,
-                sub: 'For Aspirants       - NEW',
-                links: '/Aspirants'
+                id: 5,
+                sub: 'For Aspirants',
+                links: '/Aspirants' ,
+                isNew: true // Added property to indicate whether to show "NEW" text
             },
         ]
            

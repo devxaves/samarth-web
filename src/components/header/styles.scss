@@ -214,6 +214,7 @@
                             &:hover::before , &.current-item::before  {
                                 width: 100%;
                             }
+
                             
     
                             a {
@@ -394,6 +395,33 @@
 
 }
 
+.menu-item {
+    .explore {
+      position: relative;
+  
+      a {
+        display: inline-block;
+        position: relative;
+  
+        .new-text {
+          display: inline-block;
+          font-size: 0.8rem;
+          color: red; // Adjust the color as needed
+          margin-left: 5px;
+          animation: blink 1.5s infinite; // Added a blinking animation
+        }
+      }
+    }
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
 
 
 

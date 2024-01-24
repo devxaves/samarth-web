@@ -70,39 +70,38 @@ const Header = () => {
                       <li
                         key={idx}
                         onClick={() => handleDropdown(idx)}
-                        className={`menu-item ${
-                          data.namesub ? "menu-item-has-children" : ""
-                        } ${activeIndex === idx ? "active" : ""}`}
+                        className={`menu-item ${data.namesub ? "menu-item-has-children" : ""
+                          } ${activeIndex === idx ? "active" : ""}`}
                       >
                         <div className="explore">
                           {data.name === "Explore" ? (
-                            <a onClick={toggleExploreSubMenu}>{data.name}</a>
+                            <a onClick={toggleExploreSubMenu}>
+                              {data.name}
+                              {data.namesub &&
+                                data.namesub.some((sub) => sub.isNew) && (
+                                  <span className="new-text">NEW</span>
+                                )}
+                            </a>
                           ) : (
                             <Link to={data.links} onClick={handleCloseMenu}>
                               {data.name}
                             </Link>
                           )}
+                          {data.namesub && (
+                            <ul
+                              className={`sub-menu ${activeIndex === idx && exploreSubMenuActive ? "active" : ""
+                                }`}
+                            >
+                              {data.namesub.map((submenu) => (
+                                <li key={submenu.id} className="menu-item">
+                                  <NavLink to={submenu.links} onClick={handleCloseMenu}>
+                                    {submenu.sub}
+                                  </NavLink>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
                         </div>
-                        {data.namesub && (
-                          <ul
-                            className={`sub-menu ${
-                              activeIndex === idx && exploreSubMenuActive
-                                ? "active"
-                                : ""
-                            }`}
-                          >
-                            {data.namesub.map((submenu) => (
-                              <li key={submenu.id} className="menu-item">
-                                <NavLink
-                                  to={submenu.links}
-                                  onClick={handleCloseMenu}
-                                >
-                                  {submenu.sub}
-                                </NavLink>
-                              </li>
-                            ))}
-                          </ul>
-                        )}
                       </li>
                     ))}
                   </ul>
