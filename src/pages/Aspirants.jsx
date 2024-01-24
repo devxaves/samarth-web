@@ -11,6 +11,7 @@ function Aspirants(props) {
             <div className="block-text center">
                 <h3 className='heading'>Upcoming Exams</h3>
                 
+                <div className='exams-list' >
                 <div className="Upcoming_exams">
                 4 Feb - GATE - Gratitide Aptitude Test In Engineering
                 </div>
@@ -22,6 +23,7 @@ function Aspirants(props) {
                 </div>
                 <div className="Upcoming_exams">
                 4 Feb - GATE - Gratitide Aptitude Test In Engineering
+                </div>
                 </div>
                
             </div>
