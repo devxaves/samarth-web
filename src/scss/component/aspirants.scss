@@ -2,15 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
 .Upcoming_exams ul li{
     width: 700px;
-    height: 40px;
+    height: 50px;
     border-radius: 12px;
-    opacity: 0.1;
     background-color: #fff;
     margin: auto;
     font-family: sans-serif;
     font-size: 20px;
-    color: white;
+    color: rgb(255, 0, 0);
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    list-style: circle;
 }
-.Upcoming_exams ul{
-
+.Upcoming_exams ul {
+    
 }
