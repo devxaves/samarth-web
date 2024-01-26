@@ -19,7 +19,7 @@
     text-align: left;
     color: rgb(255, 255, 255);
     cursor: pointer;
-    transition: 0.3s ;
+    transition: 0.3s;
 
 
 
@@ -27,7 +27,7 @@
 }
 
 
-.Upcoming_exams:hover{
+.Upcoming_exams:hover {
     background-image: linear-gradient(90deg, #c38eff00 -1.39%, rgba(253, 253, 254, 0) -1.38%, rgba(111, 1, 255, 0.253) 99.99%, rgba(66, 0, 153, 0.6) 100%);
     scale: 102%;
 
@@ -45,8 +45,9 @@
     margin-left: 20px;
     margin-right: 20px;
     animation: blink 1.5s infinite;
-    
+
 }
+
 .videos {
     display: flex;
     flex-direction: row;
@@ -54,6 +55,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    max-width: 80%;
+    margin: auto;
 }
 
 .video-container {
@@ -64,97 +67,113 @@
     width: 270px;
     height: 250px;
     flex-shrink: 0;
-    border-radius: 10px;  
+    border-radius: 10px;
     background: #ffffff25;
     margin-left: 20px;
-    margin-right: 20px ;
+    margin-right: 20px;
     margin-top: 50px;
     transition: 0.3s;
     cursor: pointer;
-    
+
 }
 
-.video-box img{
+.video-box img {
     width: 235px;
     height: 140px;
     flex-shrink: 0;
     border-radius: 10px;
     background: #1E1E1E;
-    margin-top: 20px ;
+    margin-top: 20px;
     // box-shadow: 0px 4px 4px 0px rgba(164, 123, 255, 0.23); 
     z-index: -1;
 }
 
-.video-title{
+.video-title {
     margin-top: 10px;
     z-index: 1;
     text-align: left;
     width: 100%;
 }
+
 .video-title p {
-    color: white ;
+    color: white;
     font-family: sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     padding: 5px 18px;
-   
+
 }
 
-.video-container:hover{
+.video-container:hover {
     scale: 107%;
-    background-color:#ffffff4e;
+    background-color: #ffffff4e;
 }
-.channel-section{
+
+.channel-section {
     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: center;
-     align-items: center;
-     text-align: center;
-   
- }
- .channel-container{
-     display: flex;
-     flex-direction: column;
-     justify-content: flex-start;
-     align-items: center;
-     width: 280px;
-     height: 280px;
-     flex-shrink: 0;
-     border-radius: 10px;  
-     background: #ffffff25;
-     margin-left: 20px;
-     margin-right: 20px ;
-     margin-top: 50px;
- 
-          }
- .channel-box{
-   width: 201px;
-   height: 201px;
-   flex-shrink: 0;
-   border-radius: 9999px;
-   background: #ffffff;
-   margin-top: 20px ;
-   z-index: -1;
- }
- .channel-name{
-     margin-top: 10px;
-     z-index: 1;
-     text-align: left;
-     width: 100%;
- }
- .channel-name p {
-     color: white ;
-     font-family: sans-serif;
-     font-size: 15px;
-     font-style: normal;
-     font-weight: 600;
-     line-height: normal;
-     padding: 5px 18px;
- }
- .website-section  {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+
+}
+
+.channel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 150px;
+    height: 180px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #ffffff25;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.channel-box {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 9999px;
+    background: #ffffff;
+    margin-top: 20px;
+    z-index: -1;
+}
+
+.channel-name {
+    margin-top: 10px;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+}
+
+.channel-name p {
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 5px 18px;
+}
+
+.channel-container:hover {
+    scale: 107%;
+    background-color: #ffffff4e;
+}
+
+.website-section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -168,47 +187,79 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 270px;
-    height: 236px;
+    width: 230px;
+    height: 120px;
     flex-shrink: 0;
-    border-radius: 30px;  
-    background: #ffffff25;
+    border-radius: 30px;
+    background-image: linear-gradient(180deg, #3D0B7B 0%, rgba(150, 103, 255, 0.57) 100%);
     margin-left: 20px;
-    margin-right: 20px ;
+    margin-right: 20px;
     margin-top: 50px;
     transition: 0.3s;
-    cursor: pointer;
-    
-}
-
-.website-box img{
-    width: 235px;
-    height: 134px;
-    flex-shrink: 0;
-    border-radius:30px;
-    background: #1E1E1E;
-    margin-top: 20px ; 
     z-index: -1;
+    cursor: pointer;
 }
 
-.website-name{
-    margin-top: 10px;
+.website-container:hover {
+    scale: 107%;
+    background-color: #2e105e;
+}
+
+.website-conti {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 220px;
+    height: 110px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background-color: #070A29;
+    margin: auto;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+
+
+.website-border {
+    width: 240px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    border: 6px linear-gradient(90deg, #632FFE 0%, #A57CFF 100%);
+    padding: 20px 20px;
+}
+
+.website-name {
+    margin: auto;
     z-index: 1;
-    text-align: left;
+    font-size: 2rem;
+    font-weight: bolder;
+    background: linear-gradient(180deg, #632FFE 0%, #f2eeff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
     width: 100%;
 }
+
+
+
+
 .website-name p {
-    color: white ;
+    color: white;
     font-family: sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     padding: 5px 18px;
-   
-}
-.website-container:hover{
-    scale: 107%;
-    background-color:#ffffff4e;
+
 }
 
+.website-container:hover {
+    scale: 107%;
+    background-color: #ffffff4e;
+}

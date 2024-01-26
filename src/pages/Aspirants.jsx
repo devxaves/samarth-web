@@ -153,11 +153,15 @@ function Aspirants(props) {
              <div className="block-text center">
                   <h3 className="heading"  >Official Websites</h3>
                   <div class="website-section">
-                     <div class="website-container">
+                     
+                        <div class="website-container">
+                        <div class="website-conti">
                          <img class="website-box"/>  
                            <div className="website-name">
-                             <p>Website Name</p>
+                             GATE
                            </div>
+                           </div>
+                           
                         </div>
                         
                        
