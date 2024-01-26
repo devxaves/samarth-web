@@ -50,7 +50,7 @@ function control_next(params) {
                 <Swiper
                   ref={swiperRef}
                   className="project-swiper"
-                  spaceBetween={0}
+                  spaceBetween={20}
                   breakpoints={{
                     0: {
                       slidesPerView: 1,
