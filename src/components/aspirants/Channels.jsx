@@ -43,14 +43,14 @@ function control_next(params) {
       ></div>
       <section className="channel-section">
         {/* <div className="shape right"></div> */}
-        <div className="container">
+        <div className="container" id='ch-cont'>
           <div className="row">
             <div className="col-12">
               <div className="swiper-container project-swiper-container">
                 <Swiper
                   ref={swiperRef}
                   className="project-swiper"
-                  spaceBetween={20}
+                  spaceBetween={30}
                   breakpoints={{
                     0: {
                       slidesPerView: 1,
