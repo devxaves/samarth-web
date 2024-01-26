@@ -103,6 +103,7 @@ function Aspirants(props) {
                     </div>
                 </div>
             </div>
+
             <div className="block-text center">
                   <h3 className="heading"  >Channels To Follow</h3>
                   <div class="channel-section">
