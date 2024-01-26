@@ -46,7 +46,6 @@ function Aspirants(props) {
                         </div>
                         <div className="video-container">
                             <div className="video-box">
-                                <img className='video-box' src={thumbnail1} alt="1" />
 
                             </div>
                             <div className="video-title">
@@ -108,53 +107,57 @@ function Aspirants(props) {
 
             <div className="block-text center">
                 <h3 className="heading"  >Channels To Follow</h3>
-                <Channels data={channel_data}></Channels>
-             </div>
-             <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
-             <div className="block-text center">
-                  <h3 className="heading"  >Official Websites</h3>
-                  <div class="website-section">
-                     
-                        <div class="website-container">
-                        <div class="website-conti">
-                           <div className="website-name">
-                             GATE
-                           </div>
-                           </div>
-                           
-                        </div>
-                        
-                       
-                     <div class="website-container">
-                         <img class="website-box" />
-                           <div className="website-name">
-                             <p>Website Name</p>
-                           </div>
-                        </div>
-                        
-                   
-                     <div class="website-container">
-                         <img class="website-box" />
-                           <div className="website-name">
-                             <p>Website Name</p>
-                           </div>
-                        </div>
-                       
-                        
-                     <div class="website-container">
-                         <img class="website-box" />
-                           <div className="website-name">
-                             <p>Website Name</p>
-                           </div>
-                        </div>
+                <div className='topic'>
+                    <Channels data={channel_data}></Channels>
                 </div>
-                        
-                        <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
-                        </div>
-            
             </div>
+
+            <div className="block-text center">
+                <h3 className="heading"  >Official Websites</h3>
+                <div className='topic'>
+                    <div class="website-section">
+
+                        <div class="website-container">
+                            <div class="website-conti">
+                                <div className="website-name">
+                                    GATE
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="website-container">
+                            <div class="website-conti">
+                                <div className="website-name">
+                                    CAT
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="website-container">
+                            <div class="website-conti">
+                                <div className="website-name">
+                                    UPSC
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="website-container">
+                            <div class="website-conti">
+                                <div className="website-name">
+                                    WBCS
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
     );
-    
+
 }
 
 export default Aspirants;
