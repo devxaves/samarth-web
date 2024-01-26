@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import "../scss/component/aspirants.scss"
 import img from "../assets/images/background/reddot.png"
 import thumbnail1 from "../assets/images/thumbnail/video1.jpg"
-
 import PageTitle from '../components/pagetitle/PageTitle';
 
 function Aspirants(props) {
@@ -104,9 +103,94 @@ function Aspirants(props) {
                     </div>
                 </div>
             </div>
-        </div>
-    );
-}
 
+            <div className="block-text center">
+                  <h3 className="heading"  >Channels To Follow</h3>
+                  <div class="channel-section">
+                     <div class="channel-container">
+                         <img class="channel-box" /> 
+                           <div class="channel-name">
+                             <p>Channel Name</p>
+                           </div>
+                     </div>
+                     <div class="channel-container">
+                         <img class="channel-box" /> 
+                            <div class="channel-name">
+                              <p>Channel Name</p>
+                            </div>
+                     </div>
+                       
+                     <div class="channel-container">
+                         <img class="channel-box" /> 
+                           <div class="channel-name">
+                              <p>Channel Name</p>
+                          </div>
+                     </div>
+                    
+                     <div class="channel-container">
+                         <img class="channel-box" /> 
+                            <div class="channel-name">
+                              <p>Channel Name</p>
+                           </div>
+                     </div>   
+
+                     <div class="channel-container">
+                         <img class="channel-box" /> 
+                           <div class="channel-name">
+                              <p>Channel Name</p>
+                         </div>
+                     </div>
+
+                     <div class="channel-container">
+                         <img class="channel-box" /> 
+                           <div class="channel-name">
+                              <p>Channel Name</p>
+                         </div>
+                     </div>
+                  </div>
+             </div>
+             <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
+             <div className="block-text center">
+                  <h3 className="heading"  >Official Websites</h3>
+                  <div class="website-section">
+                     <div class="website-container">
+                         <img class="website-box"/>  
+                           <div className="website-name">
+                             <p>Website Name</p>
+                           </div>
+                        </div>
+                        
+                       
+                     <div class="website-container">
+                         <img class="website-box" />
+                           <div className="website-name">
+                             <p>Website Name</p>
+                           </div>
+                        </div>
+                        
+                   
+                     <div class="website-container">
+                         <img class="website-box" />
+                           <div className="website-name">
+                             <p>Website Name</p>
+                           </div>
+                        </div>
+                       
+                        
+                     <div class="website-container">
+                         <img class="website-box" />
+                           <div className="website-name">
+                             <p>Website Name</p>
+                           </div>
+                        </div>
+                </div>
+                        
+                        <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
+                        </div>
+            
+            </div>
+    );
+    
+}
 
 export default Aspirants;
