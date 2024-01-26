@@ -137,18 +137,24 @@
     height: 50px;
     align-self: auto;
     cursor: pointer;
+    transition: all 0.2s ;
 }
-
+.control:hover{
+    scale: 115%;
+    filter: brightness(80%);
+}
 #control-prev {
     background-image: url('../../assets/images/ForAspirants/channel-dp/leftarrow.png');
     background-size: cover;
     background-position: center;
+    margin-right: 20px;
 }
 
 #control-next {
     background-image: url('../../assets/images/ForAspirants/channel-dp/rightArrow.png');
     background-size: cover;
     background-position: center;
+    margin-left: 20px;
 }
 
 .channel-container {
