@@ -156,7 +156,6 @@ function Aspirants(props) {
                      
                         <div class="website-container">
                         <div class="website-conti">
-                         <img class="website-box"/>  
                            <div className="website-name">
                              GATE
                            </div>
