@@ -256,10 +256,11 @@
     font-weight: 600;
     line-height: normal;
     padding: 5px 18px;
-
+    transition: 2s linear;
 }
 
-.website-container:hover {
+.website-name p:hover {
     scale: 107%;
     background-color: #ffffff4e;
+
 }
