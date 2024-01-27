@@ -1,12 +1,12 @@
 const menus = [
     {
         id: 1,
-        name: 'Home', 
+        name: 'Home',
         links: '/',
     },
     {
         id: 2,
-        name: 'Wings', 
+        name: 'Wings',
         links: '/About',
     },
     {
@@ -23,7 +23,7 @@ const menus = [
                 id: 2,
                 sub: 'Activity',
                 links: '/Activity'
-                
+
             },
             {
                 id: 3,
@@ -38,11 +38,11 @@ const menus = [
             {
                 id: 5,
                 sub: 'For Aspirants',
-                links: '/Aspirants' ,
+                links: '/Aspirants',
                 isNew: true // Added property to indicate whether to show "NEW" text
             },
         ]
-           
+
     },
     {
         id: 4,
@@ -56,14 +56,14 @@ const menus = [
         links: '/team',
     },
 
-    
+
     {
         id: 6,
         name: 'Contact',
         links: '/contact',
     },
 
-   
+
 ];
 
 export default menus;
