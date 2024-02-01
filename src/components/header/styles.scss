@@ -403,13 +403,14 @@
         display: inline-block;
         position: relative;
   
-        .new-text {
-          display: inline-block;
-          font-size: 0.8rem;
-          color: red; // Adjust the color as needed
-          margin-left: 5px;
-          animation: blink 1.5s infinite; // Added a blinking animation
-        }
+      }
+
+      .new-text {
+        display: inline-block;
+        font-size: 0.8rem;
+        color: red; // Adjust the color as needed
+        margin-left: 5px;
+        animation: blink 1.5s infinite; // Added a blinking animation
       }
     }
   }

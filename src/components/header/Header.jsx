@@ -96,6 +96,7 @@ const Header = () => {
                                 <li key={submenu.id} className="menu-item">
                                   <NavLink to={submenu.links} onClick={handleCloseMenu}>
                                     {submenu.sub}
+                                    {submenu.isNew? <span className="new-text">NEW</span>:<></>}
                                   </NavLink>
                                 </li>
                               ))}
