@@ -265,7 +265,7 @@
     height: 120px;
     flex-shrink: 0;
     border-radius: 30px;
-    background-image: linear-gradient(180deg, #3D0B7B 0%, rgba(150, 103, 255, 0.57) 100%);
+    background-image: linear-gradient(180deg, #3D0B7B 0%, rgba(175, 138, 255, 0.57) 100%);
     // margin-left: 20px;
     // margin-right: 20px;
     // margin-top: 50px;
@@ -276,7 +276,7 @@
 
 .website-container:hover {
     scale: 107%;
-    background-image: linear-gradient(180deg, rgba(150, 103, 255, 0.57) 0%, #3D0B7B 100%);
+    background-image: linear-gradient(180deg, rgba(150, 103, 255, 0.57) 0%, #ffffff 100%);
 
     .website-conti {
         .website-name {

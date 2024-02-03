@@ -33,19 +33,7 @@ const videos_data = [
         title: 'How to fill OMR Sheet in Mock Test & Prelims Exams | Drishti IAS',
         url:'https://youtu.be/f3BPJxJ3JwE?si=SRhuBDIx52nhvEM1',
     },
-    {
-        id: 5,
-        thumbnail: img5,
-        title: 'How to fill OMR Sheet in Mock Test & Prelims Exams | Drishti IAS',
-        url:'https://youtu.be/f3BPJxJ3JwE?si=SRhuBDIx52nhvEM1',
-    },
-    {
-        id: 6,
-        thumbnail: img6,
-        title: 'How to fill OMR Sheet in Mock Test & Prelims Exams | Drishti IAS',
-        url:'https://youtu.be/f3BPJxJ3JwE?si=SRhuBDIx52nhvEM1',
-    }
-
+    
 ]
 
 export default videos_data
