@@ -1,8 +1,14 @@
+//React
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+//Swiper API
 import { Swiper, SwiperSlide } from 'swiper/react';
+import {Autoplay,Navigation,Pagination} from 'swiper'
 import 'swiper/scss';
 import 'swiper/scss/pagination';
+//FontAwesome Icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
 Channels.propTypes = {
   data: PropTypes.array,
@@ -25,12 +31,12 @@ function Channels(props) {
 
   const swiperRef = React.useRef(null);
 
-function control_prev(params) {
+function control_prev() {
   if (swiperRef.current && swiperRef.current.swiper) {
     swiperRef.current.swiper.slidePrev();
   }
 }
-function control_next(params) {
+function control_next() {
   if (swiperRef.current && swiperRef.current.swiper) {
     swiperRef.current.swiper.slideNext();
   }
@@ -38,9 +44,9 @@ function control_next(params) {
 
   return (
     <div className="channel-carousel">
-      <div class='control' id='control-prev' 
+      <div className='control' style={{margin:"0 25px 0 0",}}
       onClick={control_prev}
-      ></div>
+      ><FontAwesomeIcon className='arrow-icons' size='xl' icon={faAngleLeft} /></div>
       <section className="channel-section">
         {/* <div className="shape right"></div> */}
         <div className="container" id='ch-cont'>
@@ -49,7 +55,7 @@ function control_next(params) {
               <div className="swiper-container project-swiper-container">
                 <Swiper
                   ref={swiperRef}
-                  className="project-swiper"
+                  className="project-swiper channel-swiper"
                   spaceBetween={30}
                   breakpoints={{
                     0: {
@@ -63,23 +69,26 @@ function control_next(params) {
                     },
                   }}
                   loop={true}
+                  navigation={false}
                   pagination={{
                     clickable: true,
                   }}
                   autoplay={{
-                    delay: 5000,
-                    disableOnInteraction: true,
+                    delay: 4000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
                   }}
                   slidesPerGroup={1}
+                  modules={[Navigation,Pagination,Autoplay]}
                   {...gestureParams}
                 >
                   {data.map((idx) => (
                     <SwiperSlide key={idx.id}>
                       <div className="swiper-slide">
                           <a href={idx.url} target="_blank" rel="noopener noreferrer">
-                            <div class="channel-container">
-                              <img class="channel-box"  src={idx.img} alt="Cyfonii" />
-                              <div class="channel-name">
+                            <div className="channel-container">
+                              <img className="channel-box"  src={idx.img} alt="Channel Picture" />
+                              <div className="channel-name">
                               {idx.title}
                               </div>
                             </div>
@@ -93,7 +102,7 @@ function control_next(params) {
           </div>
         </div>
       </section>
-      <div class='control' id='control-next' onClick={control_next}></div>
+      <div className='control' style={{margin:"0 0 0 25px",}} onClick={control_next}><FontAwesomeIcon className='arrow-icons' size='xl' icon={faAngleRight} /></div>
     </div>
   );
 }
